@@ -1,0 +1,12 @@
+total 356
+-rw-r--r-- 1 root root   2378 2011-04-19 16:59 ack.vim
+-rw-r--r-- 1 root root   4430 2011-04-15 21:47 command-t.vim
+-rw-r--r-- 1 root root   8758 2011-04-15 20:28 fuf.vim
+-rw-r--r-- 1 root root  56489 2011-04-15 22:11 fugitive.vim
+-rw-r--r-- 1 root root      0 2011-05-02 12:52 gedit
+-rw-r--r-- 1 root root   3139 2011-04-15 20:33 l9.vim
+-rw-r--r-- 1 root root   7622 2011-04-15 21:36 molokai.vim
+-rw-r--r-- 1 root root 105048 2010-12-07 20:37 NERD_commenter.vim
+-rw-r--r-- 1 root root 128014 2011-04-15 20:49 NERD_tree.vim
+-rw-r--r-- 1 root root  20728 2011-04-15 22:21 pastie.vim
+-rw-r--r-- 1 root root   7442 2009-07-13 15:22 snipMate.vim
