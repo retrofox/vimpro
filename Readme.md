@@ -1,1 +1,6 @@
-### VIM for javascript
+### VIM - javascript
+
+## syntax support
+
+  * jade
+  * stylus
