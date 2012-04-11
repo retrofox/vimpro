@@ -1,16 +1,17 @@
-### background
-# https://developer.mozilla.org/en/CSS/background
+#--- background -------------------------------------------------------------------
+#
 # background
+# https://developer.mozilla.org/en/CSS/background
 snippet bg
-	background ${1:color} url('${2:/image}') ${3:repeat} ${4:scroll} ${5:left} ${6:top}${7:}
+	background ${1:[color] }url('${2:[image] }') ${3:no-repeat} ${4:[scroll] }${5:left} ${6:top}${7:}
 #
 # background-color
 snippet bgc
-	background-color ${1:color}${2:}
+	background-color ${1:[color] }${2:}
 #
 # background-image
 snippet bgi
-	background-image url('/${1:image}')${2:}
+	background-image url('/${1:[image] }')${2:}
 #
 # background-repeat
 snippet bgr
@@ -18,54 +19,84 @@ snippet bgr
 #
 # background-repeat
 snippet bgs
-	background-scroll ${1:scroll}${2:}
+	background-scroll ${1:[scroll] }${2:}
 #
 # background-repeat
 snippet bgp
 	background-position ${1:left} ${2:top}${3:}
-###
+#----------------------------------------------------------------------------------
+#
+#--- position ---------------------------------------------------------------------
 #
 # position
 snippet ps
-	position ${1:absolute}
+	position ${1:absolute}${2:}
 #
-# padding
-snippet p
-	padding ${1:top} ${2:rigth} ${3:bottom} ${4:left}${5:}
+snippet t top css property
+	top ${1:[value] }${2:px}${3:}
 #
-# padding-top
-snippet pt
-	padding-top ${1:top}px${2:}
+snippet r rigth css property
+	rigth ${1:[value] }${2:px}${3:}
+#
+snippet b bottom css property
+	bottom ${1:[value] }${2:px}${3:}
+#
+snippet l left css property
+	left ${1:[value] }${2:px}${3:}
+#----------------------------------------------------------------------------------
+#
+#--- padding ----------------------------------------------------------------------
+#
+snippet p padding full shorthand
+	padding ${1:[top] }${2:px} ${3:[rigth] }${4:px} ${5:[bottom] }${6:px} ${7:[left] }${8:px}${9:}
+#
+snippet p3 padding three-words shorthand
+	padding ${1:[top] }${2:px} ${3:[bottom] }${4:px} ${5:[left-right] }${6:px}${7:}
+#
+snippet p2 padding two-words shorthand
+	padding ${1:[top-bottom] }${2:px} ${3:[left-right] }${4:px}${5:}
+#
+snippet pt padding-top css property
+	padding-top ${1:[top] }${2:px}${3:}
 #
 # padding-right
-snippet pr
-	padding-right ${1:right}px${2:}
+snippet pr padding-right css property
+	padding-right ${1:[right] }${2:px}${3:}
 #
 # padding-bottom
-snippet pb
-	padding-bottom ${1:bottom}px${2:}
+snippet pb padding-bottom css property
+	padding-bottom ${1:[bottom] }${2:px}${3:}
 #
 # padding-left
-snippet pl
-	padding-left ${1:left}px${2:}
+snippet pl padding-left css property
+	padding-left ${1:[left] }${2:px}${3:}
 #
-# margin
-snippet m
-	margin ${1:top} ${2:rigth} ${3:bottom} ${4:left}${5:}
+#----------------------------------------------------------------------------------
 #
-# margin-top
-snippet mt
-	margin-top ${1:top}px${2:}
+#--- margin -----------------------------------------------------------------------
+#
+snippet m margin full shorthand
+	margin ${1:[top] }${2:px} ${3:[rigth] }${4:px} ${5:[bottom] }${6:px} ${7:[left] }${8:px}${9:}
+#
+snippet m3 margin three-words shorthand
+	margin ${1:[top] }${2:px} ${3:[bottom] }${4:px} ${5:[left-right] }${6:px}${7:}
+#
+snippet m2 margin two-words shorthand
+	margin ${1:[top-bottom] }${2:px} ${3:[left-right] }${4:px}${5:}
+#
+snippet mt margin-top css property
+	margin-top ${1:[top] }${2:px}${3:}
 #
 # margin-right
-snippet mr
-	margin-right ${1:right}px${2:}
+snippet mr margin-right css property
+	margin-right ${1:[right] }${2:px}${3:}
 #
 # margin-bottom
-snippet mb
-	margin-bottom ${1:bottom}px${2:}
+snippet mb margin-bottom css property
+	margin-bottom ${1:[bottom] }${2:px}${3:}
 #
 # margin-left
-snippet ml
-	margin-left ${1:left}px${2:}
+snippet ml margin-left css property
+	margin-left ${1:[left] }${2:px}${3:}
 #
+#----------------------------------------------------------------------------------
