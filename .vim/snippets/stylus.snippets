@@ -1,8 +1,18 @@
-#--- background -------------------------------------------------------------------
+# Summary
+#   _backgrounds
+#   _positions
+#   _dimmensions
+#   _borders
+#   _padding
+#   _margin
+#   _font
+#   _colors
+
+
+#--- _backgrounds -----------------------------------------------------------------
 #
-# background
 # https://developer.mozilla.org/en/CSS/background
-snippet bg
+snippet bg background shorthand
 	background ${1:[color] }url('${2:[image] }') ${3:no-repeat} ${4:[scroll] }${5:left} ${6:top}${7:}
 #
 # background-color
@@ -26,26 +36,26 @@ snippet bgp
 	background-position ${1:left} ${2:top}${3:}
 #----------------------------------------------------------------------------------
 #
-#--- position ---------------------------------------------------------------------
+#--- _positions -------------------------------------------------------------------
 #
 # position
 snippet ps
 	position ${1:absolute}${2:}
 #
-snippet t top css property
+snippet pst top css property
 	top ${1:[value] }${2:px}${3:}
 #
-snippet r rigth css property
+snippet psr rigth css property
 	rigth ${1:[value] }${2:px}${3:}
 #
-snippet b bottom css property
+snippet psb bottom css property
 	bottom ${1:[value] }${2:px}${3:}
 #
-snippet l left css property
+snippet psl left css property
 	left ${1:[value] }${2:px}${3:}
 #----------------------------------------------------------------------------------
 #
-#--- dimmensions ------------------------------------------------------------------
+#--- _dimmensions -----------------------------------------------------------------
 #
 snippet h height property
 	height ${1:[value] }${2:px}${3:}
@@ -61,7 +71,16 @@ snippet mw min-width property
 #
 #----------------------------------------------------------------------------------
 #
-#--- padding ----------------------------------------------------------------------
+#--- _borders ---------------------------------------------------------------------
+#
+snippet b border shorthand
+	border ${1:width}${2:px} ${3:[style] } ${4:[color] }${5:}
+#
+snippet bc border-color css property
+	border-color ${1:[color] }${2:}
+#----------------------------------------------------------------------------------
+#
+#--- _padding ---------------------------------------------------------------------
 #
 snippet p padding full shorthand
 	padding ${1:[top] }${2:px} ${3:[rigth] }${4:px} ${5:[bottom] }${6:px} ${7:[left] }${8:px}${9:}
@@ -78,21 +97,18 @@ snippet p3 padding three-words shorthand
 snippet pt padding-top css property
 	padding-top ${1:[top] }${2:px}${3:}
 #
-# padding-right
 snippet pr padding-right css property
 	padding-right ${1:[right] }${2:px}${3:}
 #
-# padding-bottom
 snippet pb padding-bottom css property
 	padding-bottom ${1:[bottom] }${2:px}${3:}
 #
-# padding-left
 snippet pl padding-left css property
 	padding-left ${1:[left] }${2:px}${3:}
 #
 #----------------------------------------------------------------------------------
 #
-#--- margin -----------------------------------------------------------------------
+#--- _margin ----------------------------------------------------------------------
 #
 snippet m margin full shorthand
 	margin ${1:[top] }${2:px} ${3:[rigth] }${4:px} ${5:[bottom] }${6:px} ${7:[left] }${8:px}${9:}
@@ -109,16 +125,37 @@ snippet m3 margin three-words shorthand
 snippet mt margin-top css property
 	margin-top ${1:[top] }${2:px}${3:}
 #
-# margin-right
 snippet mr margin-right css property
 	margin-right ${1:[right] }${2:px}${3:}
 #
-# margin-bottom
 snippet mb margin-bottom css property
 	margin-bottom ${1:[bottom] }${2:px}${3:}
 #
-# margin-left
 snippet ml margin-left css property
 	margin-left ${1:[left] }${2:px}${3:}
+#
+#----------------------------------------------------------------------------------
+#
+#--- _font ------------------------------------------------------------------------
+#
+snippet ff font-family css property
+	font-family ${1:[family] }${2:}
+#
+snippet fw font-weight css propoerty
+	font-weight ${1:bold}${2:}
+#
+snippet fs font-size css property
+	font-size ${1:[value] }${2:}
+#
+#--- _colors ----------------------------------------------------------------------
+#
+snippet c color property
+	color ${1:[color] }${2:}
+#
+snippet rgb rgb color definition
+	rgb( ${1:red},${2:green},${3:blue} )${4:}
+#
+snippet rgba rgba color definition
+	rgba(${1:red},${2:green},${3:blue},${4:alpha})${5:}
 #
 #----------------------------------------------------------------------------------
