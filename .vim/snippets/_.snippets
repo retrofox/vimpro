@@ -1,6 +1,33 @@
 # Summary
+#
+#    _generic
+#      print()
+#
+#    _documentation
+#      function - @param
+#      function - @return
+#
 #    _Licenses
-#      licmit
+#      licmit: MIT License
+#
+#--- _print -----------------------------------------------------------------------
+#
+snippet pri print generic funtion
+	print("${1:[val] } -> " + $1);${2:}
+#
+#----------------------------------------------------------------------------------
+#
+#--- _documentation ---------------------------------------------------------------
+snippet fnp function @param
+	@param {${1:[type ]}} ${2:name} - ${3:desc}${4:}
+#
+snippet fnr function @return
+	@return {${1:[type] }}${2:}
+#
+snippet fna function @api
+	@api ${1:private}${2:}
+#
+#----------------------------------------------------------------------------------
 #
 #--- _Lisences --------------------------------------------------------------------
 #
@@ -28,3 +55,4 @@ snippet licmit The MIT License
 	SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.${4:}
 #
 #----------------------------------------------------------------------------------
+#

@@ -1,12 +1,14 @@
 # Summary
 #   _backgrounds
-#   _positions
-#   _dimmensions
 #   _borders
-#   _padding
-#   _margin
-#   _font
+#   _box-model
 #   _colors
+#   _dimmensions
+#   _font
+#   _margin
+#   _padding
+#   _positions
+#   _text
 #
 #--- _backgrounds -----------------------------------------------------------------
 #
@@ -52,6 +54,10 @@ snippet psb bottom css property
 #
 snippet psl left css property
 	left ${1:[value] }${2:px}${3:}
+#
+snippet va vertical-align property
+	vertical-align ${1:top}${2:}
+#
 #----------------------------------------------------------------------------------
 #
 #--- _dimmensions -----------------------------------------------------------------
@@ -77,6 +83,19 @@ snippet b border shorthand
 #
 snippet bc border-color css property
 	border-color ${1:[color] }${2:}
+#
+snippet bw border-width css property
+	border-width ${1:[value] }${2:px}${3:}
+#
+snippet br border-radius css property
+	border-radius ${1:[value] }${2:px}${3:}
+#----------------------------------------------------------------------------------
+#
+#--- _box-model -------------------------------------------------------------------
+#
+snippet d display
+	display ${1:inline-block}${2:}
+#
 #----------------------------------------------------------------------------------
 #
 #--- _padding ---------------------------------------------------------------------
@@ -146,14 +165,30 @@ snippet fw font-weight css propoerty
 snippet fs font-size css property
 	font-size ${1:[value] }${2:}
 #
+#----------------------------------------------------------------------------------
+#
+#--- _text ------------------------------------------------------------------------
+#
+snippet lh line-height property
+	line-height ${1:[value ]}${2:px}${3:}
+#
+snippet ta text-align property
+	text-align ${1:center }${2:}
+#
+snippet td text-decoration property
+	text-decoration ${1:underline}${2:}
+#
+snippet tt text-transform property
+	text-transform ${1:capitalize}${2:}
+#
+#----------------------------------------------------------------------------------
+#
 #--- _colors ----------------------------------------------------------------------
 #
 snippet c color property
 	color ${1:[color] }${2:}
 #
 snippet rgb rgb color definition
-	rgb(${1:red},${2:green},${3:blue})${4:}
-#
 snippet rgba rgba color definition
 	rgba(${1:red},${2:green},${3:blue},${4:alpha})${5:}
 #
