@@ -7,3 +7,6 @@
 [submodule ".vim/bundle/snipmate"]
 	path = .vim/bundle/snipmate
 	url = git://github.com/RetroFOX/snipmate.vim.git
+[submodule ".vim/bundle/syntastic"]
+	path = .vim/bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git
