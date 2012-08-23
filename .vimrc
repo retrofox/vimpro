@@ -125,3 +125,12 @@ nnoremap <C-l> <C-w>l
 augroup mkd
   autocmd BufRead *.md  set ai formatoptions=tcroqn2 comments=n:&gt;
 augroup END
+
+" Syntastic options
+let g:syntastic_auto_jump = 1
+" let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+" let g:syntastic_loc_list_height = 5
+let g:syntastic_mode_map = { 'mode': 'active',
+                           \ 'active_filetypes': ['javascript'],
+                           \ 'passive_filetypes': [] }
