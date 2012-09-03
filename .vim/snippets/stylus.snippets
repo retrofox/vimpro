@@ -14,179 +14,179 @@
 #
 # https://developer.mozilla.org/en/CSS/background
 snippet bg background shorthand
-	background ${1:[color] }url('${2:[image] }') ${3:no-repeat} ${4:[scroll] }${5:left} ${6:top}${7:}
+	background: ${1:[color] }url('${2:[image] }') ${3:no-repeat} ${4:[scroll] }${5:left} ${6:top}${7:}
 #
 # background-color
 snippet bgc
-	background-color ${1:[color] }${2:}
+	background-color: ${1:[color] }${2:}
 #
 # background-image
 snippet bgi
-	background-image url('/${1:[image] }')${2:}
+	background-image: url('/${1:[image] }')${2:}
 #
 # background-repeat
 snippet bgr
-	background-repeat ${1:repeat}${2:}
+	background-repeat: ${1:repeat}${2:}
 #
 # background-repeat
 snippet bgs
-	background-scroll ${1:[scroll] }${2:}
+	background-scroll: ${1:[scroll] }${2:}
 #
 # background-repeat
 snippet bgp
-	background-position ${1:left} ${2:top}${3:}
+	background-position: ${1:left} ${2:top}${3:}
 #----------------------------------------------------------------------------------
 #
 #--- _positions -------------------------------------------------------------------
 #
 # position
 snippet ps
-	position ${1:absolute}${2:}
+	position: ${1:absolute}${2:}
 #
 snippet pst top css property
-	top ${1:[value] }${2:px}${3:}
+	top: ${1:[value] }${2:px}${3:}
 #
 snippet psr rigth css property
-	rigth ${1:[value] }${2:px}${3:}
+	rigth: ${1:[value] }${2:px}${3:}
 #
 snippet psb bottom css property
-	bottom ${1:[value] }${2:px}${3:}
+	bottom: ${1:[value] }${2:px}${3:}
 #
 snippet psl left css property
-	left ${1:[value] }${2:px}${3:}
+	left: ${1:[value] }${2:px}${3:}
 #
 snippet va vertical-align property
-	vertical-align ${1:top}${2:}
+	vertical-align: ${1:top}${2:}
 #
 #----------------------------------------------------------------------------------
 #
 #--- _dimmensions -----------------------------------------------------------------
 #
 snippet h height property
-	height ${1:[value] }${2:px}${3:}
+	height: ${1:[value] }${2:px}${3:}
 #
 snippet w width property
-	width ${1:[value] }${2:px}${3:}
+	width: ${1:[value] }${2:px}${3:}
 #
 snippet mh min-height property
-	min-height ${1:[value] }${2:px}${3:}
+	min-height: ${1:[value] }${2:px}${3:}
 #
 snippet mw min-width property
-	min-width ${1:[value] }${2:px}${3:}
+	min-width: ${1:[value] }${2:px}${3:}
 #
 #----------------------------------------------------------------------------------
 #
 #--- _borders ---------------------------------------------------------------------
 #
 snippet b border shorthand
-	border ${1:width}${2:px} ${3:[style] } ${4:[color] }${5:}
+	border: ${1:width}${2:px} ${3:[style] } ${4:[color] }${5:}
 #
 snippet bc border-color css property
-	border-color ${1:[color] }${2:}
+	border-color: ${1:[color] }${2:}
 #
 snippet bw border-width css property
-	border-width ${1:[value] }${2:px}${3:}
+	border-width: ${1:[value] }${2:px}${3:}
 #
 snippet br border-radius css property
-	border-radius ${1:[value] }${2:px}${3:}
+	border-radius: ${1:[value] }${2:px}${3:}
 #----------------------------------------------------------------------------------
 #
 #--- _box-model -------------------------------------------------------------------
 #
 snippet d display
-	display ${1:inline-block}${2:}
+	display: ${1:inline-block}${2:}
 #
 #----------------------------------------------------------------------------------
 #
 #--- _padding ---------------------------------------------------------------------
 #
 snippet p padding full shorthand
-	padding ${1:[top] }${2:px} ${3:[rigth] }${4:px} ${5:[bottom] }${6:px} ${7:[left] }${8:px}${9:}
+	padding: ${1:[top] }${2:px} ${3:[rigth] }${4:px} ${5:[bottom] }${6:px} ${7:[left] }${8:px}${9:}
 #
 snippet p1 padding one-word shorthand
-	padding ${1:[value] }${2:px}${3:}
+	padding: ${1:[value] }${2:px}${3:}
 #
 snippet p2 padding two-words shorthand
-	padding ${1:[top-bottom] }${2:px} ${3:[left-right] }${4:px}${5:}
+	padding: ${1:[top-bottom] }${2:px} ${3:[left-right] }${4:px}${5:}
 #
 snippet p3 padding three-words shorthand
-	padding ${1:[top] }${2:px} ${3:[bottom] }${4:px} ${5:[left-right] }${6:px}${7:}
+	padding: ${1:[top] }${2:px} ${3:[bottom] }${4:px} ${5:[left-right] }${6:px}${7:}
 #
 snippet pt padding-top css property
-	padding-top ${1:[top] }${2:px}${3:}
+	padding-top: ${1:[top] }${2:px}${3:}
 #
 snippet pr padding-right css property
-	padding-right ${1:[right] }${2:px}${3:}
+	padding-right: ${1:[right] }${2:px}${3:}
 #
 snippet pb padding-bottom css property
-	padding-bottom ${1:[bottom] }${2:px}${3:}
+	padding-bottom: ${1:[bottom] }${2:px}${3:}
 #
 snippet pl padding-left css property
-	padding-left ${1:[left] }${2:px}${3:}
+	padding-left: ${1:[left] }${2:px}${3:}
 #
 #----------------------------------------------------------------------------------
 #
 #--- _margin ----------------------------------------------------------------------
 #
 snippet m margin full shorthand
-	margin ${1:[top] }${2:px} ${3:[rigth] }${4:px} ${5:[bottom] }${6:px} ${7:[left] }${8:px}${9:}
+	margin: ${1:[top] }${2:px} ${3:[rigth] }${4:px} ${5:[bottom] }${6:px} ${7:[left] }${8:px}${9:}
 #
 snippet m1 margin one-word shorthand
-	margin ${1:[value] }${2:px}${3:}
+	margin: ${1:[value] }${2:px}${3:}
 #
 snippet m2 margin two-words shorthand
-	margin ${1:[top-bottom] }${2:px} ${3:[left-right] }${4:px}${5:}
+	margin: ${1:[top-bottom] }${2:px} ${3:[left-right] }${4:px}${5:}
 #
 snippet m3 margin three-words shorthand
-	margin ${1:[top] }${2:px} ${3:[bottom] }${4:px} ${5:[left-right] }${6:px}${7:}
+	margin: ${1:[top] }${2:px} ${3:[bottom] }${4:px} ${5:[left-right] }${6:px}${7:}
 #
 snippet mt margin-top css property
-	margin-top ${1:[top] }${2:px}${3:}
+	margin-top: ${1:[top] }${2:px}${3:}
 #
 snippet mr margin-right css property
-	margin-right ${1:[right] }${2:px}${3:}
+	margin-right: ${1:[right] }${2:px}${3:}
 #
 snippet mb margin-bottom css property
-	margin-bottom ${1:[bottom] }${2:px}${3:}
+	margin-bottom: ${1:[bottom] }${2:px}${3:}
 #
-snippet ml margin-left css property
-	margin-left ${1:[left] }${2:px}${3:}
+snippet ml: margin-left css property
+	margin-left: ${1:[left] }${2:px}${3:}
 #
 #----------------------------------------------------------------------------------
 #
 #--- _font ------------------------------------------------------------------------
 #
 snippet ff font-family css property
-	font-family ${1:[family] }${2:}
+	font-family: ${1:[family] }${2:}
 #
 snippet fw font-weight css propoerty
-	font-weight ${1:bold}${2:}
+	font-weight: ${1:bold}${2:}
 #
 snippet fs font-size css property
-	font-size ${1:[value] }${2:}
+	font-size: ${1:[value] }${2:}
 #
 #----------------------------------------------------------------------------------
 #
 #--- _text ------------------------------------------------------------------------
 #
 snippet lh line-height property
-	line-height ${1:[value ]}${2:px}${3:}
+	line-height: ${1:[value ]}${2:px}${3:}
 #
 snippet ta text-align property
-	text-align ${1:center }${2:}
+	text-align: ${1:center }${2:}
 #
 snippet td text-decoration property
-	text-decoration ${1:underline}${2:}
+	text-decoration: ${1:underline}${2:}
 #
 snippet tt text-transform property
-	text-transform ${1:capitalize}${2:}
+	text-transform: ${1:capitalize}${2:}
 #
 #----------------------------------------------------------------------------------
 #
 #--- _colors ----------------------------------------------------------------------
 #
 snippet c color property
-	color ${1:[color] }${2:}
+	color: ${1:[color] }${2:}
 #
 snippet rgb rgb color definition
 snippet rgba rgba color definition
