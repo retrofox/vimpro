@@ -1,6 +1,7 @@
 #
 # Summary
 #
+#  
 #   _express
 #   _nodejs
 #   _mongo
@@ -11,7 +12,7 @@ snippet rp request param function
 	req.param('${1:paran}')${2}
 #
 snippet rq requiere a new module
-	${1:[name] } = require('$1')${2:}
+	${1:[name] } = require('${2:$1}')${3:}
 #
 snippet app app routes
 	/**
