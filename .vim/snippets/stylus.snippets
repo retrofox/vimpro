@@ -3,7 +3,7 @@
 #   _general
 #   _backgrounds
 #   _borders
-#   _box-model
+#   _visibility
 #   _colors
 #   _dimmensions
 #   _font
@@ -13,13 +13,16 @@
 #   _text
 #
 
-#--- _backgrounds -----------------------------------------------------------------
+#--- _general ---------------------------------------------------------------------
+#
+snippet ov overflow overflow property
+	overflow: ${1:hidden}${2:}
 #
 snippet cr cursor cursor property
 	cursor: ${1:pointer}${2:}
 #
-snippet ov overflow overflow property
-	overflow: ${1:hidden}${2:}
+snippet trr transform property
+	transform: rotate(${1:45}deg)${2:}
 #
 #----------------------------------------------------------------------------------
 #
@@ -98,7 +101,7 @@ snippet xw max-width property
 #--- _borders ---------------------------------------------------------------------
 #
 snippet b border shorthand
-	border: ${1:width}${2:px} ${3:[style] } ${4:[color] }${5:}
+	border: ${1:1}${2:px} ${3:solid} ${4:black}${5:}
 #
 snippet bc border-color css property
 	border-color: ${1:[color] }${2:}
@@ -110,10 +113,16 @@ snippet br border-radius css property
 	border-radius: ${1:[value] }${2:px}${3:}
 #----------------------------------------------------------------------------------
 #
-#--- _box-model -------------------------------------------------------------------
+#--- _visibility ------------------------------------------------------------------
+#
+snippet vs visibility property
+	visibility: ${1:hidden}${2:}
 #
 snippet d display
 	display: ${1:inline-block}${2:}
+#
+snippet op opacity property
+	opacity: 0.${1: }${2:}
 #
 #----------------------------------------------------------------------------------
 #
@@ -212,8 +221,5 @@ snippet rgb rgb color definition
 #
 snippet rgba rgba color definition
 	rgba(${1:red},${2:green},${3:blue},${4:alpha})${5:}
-#
-snippet op opacity property
-	opacity: 0.${1: }${2:}
 #
 #----------------------------------------------------------------------------------
