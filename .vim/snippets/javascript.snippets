@@ -5,6 +5,8 @@
 #   _express
 #   _nodejs
 #   _mongo
+#   _pure_javascript
+#   _jQuery
 #
 #--- _express ---------------------------------------------------------------------
 #
@@ -39,11 +41,27 @@ snippet addl add listender
 snippet oid ObjectId() function
 	ObjectId("${1:[id] }")${2:}
 #----------------------------------------------------------------------------------
-
-
+#
 #--- _pure_javascript -------------------------------------------------------------
 #
 snippet pt prototype reservad word
 	prototype.${1:}
 #
 #----------------------------------------------------------------------------------
+#
+#--- _jQuery ----------------------------------------------------------------------
+#
+snippet ac add class method
+	addClass('${1:name}')${2:}
+#
+snippet hc has class method
+	hasClass('${1:name}')${2:}
+#
+snippet rc remove class method
+	removeClass('${1:name}')${2:}
+#
+snippet tc toggle class method
+	toggleClass('${1:name}')${2:}
+#
+#----------------------------------------------------------------------------------
+
