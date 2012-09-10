@@ -11,6 +11,7 @@
 #   _padding
 #   _positions
 #   _text
+#   _pseudos
 #
 
 #--- _general ---------------------------------------------------------------------
@@ -209,6 +210,9 @@ snippet td text-decoration property
 snippet tt text-transform property
 	text-transform: ${1:capitalize}${2:}
 #
+snippet ts text-shadow property
+	text-shadow: ${1:x} ${2:y} ${3:color}${4:}
+#
 #----------------------------------------------------------------------------------
 #
 #--- _colors ----------------------------------------------------------------------
@@ -221,5 +225,12 @@ snippet rgb rgb color definition
 #
 snippet rgba rgba color definition
 	rgba(${1:red},${2:green},${3:blue},${4:alpha})${5:}
+#
+#----------------------------------------------------------------------------------
+#
+#--- _pseudos ----------------------------------------------------------------------
+#
+snippet ch nth-child property
+	nth-child(${1:1})${2:}
 #
 #----------------------------------------------------------------------------------
