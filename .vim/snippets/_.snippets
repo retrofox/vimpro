@@ -12,26 +12,54 @@
 #
 #--- _print -----------------------------------------------------------------------
 #
-snippet pri print generic funtion
-	print("${1:[val] } -> " + $1);${2:}
+snippet ' double ''
+	'${1: }'${2:}
 #
-#----------------------------------------------------------------------------------
+snippet', comma endline
+	,
+	${1: }
 #
-#--- _documentation ---------------------------------------------------------------
-snippet fnp function @param
-	@param {${1:[type ]}} ${2:name} - ${3:desc}${4:}
+snippet " double ""
+	"${1: }"${2:}
 #
-snippet fnr function @return
-	@return {${1:[type] }}${2:}
+snippet { double {}
+	{${1: }}
 #
-snippet fna function @api
-	@api ${1:private}${2:}
+snippet } double {}
+	{
+		${1: }
+	}
+#
+snippet {{ object definition { }
+	var ${1:name} = {
+		${2:}
+	};
+#
+snippet [ double  []
+	[${1: }]${2:}
+#
+snippet ] double []
+	[
+		${1: }
+	]
+#
+snippet [[ array definition []
+	var ${1:name} = [
+		${2:}
+	];
+#
+#
+snippet :: definition
+	'${1:name}': '${2:value}'${3:}
+#
+snippet : definition
+	${1:name}: '${2:value}'${3:}
 #
 #----------------------------------------------------------------------------------
 #
 #--- _Lisences --------------------------------------------------------------------
 #
-snippet licmit The MIT License
+snippet lmit The MIT License
 	(The MIT License)
 	Copyright(c) ${1:`strftime("%Y")`} ${2:[author] } <${3:[email] }>
 
