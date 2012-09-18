@@ -44,12 +44,19 @@ snippet oid ObjectId() function
 #
 #--- _pure_javascript -------------------------------------------------------------
 #
-snippet pt prototype reservad word
+snippet pt prototype reserved word
 	prototype.${1:}
+#
+snippet sto setTimeout global method
+	setTimeout(function(){
+		${2:}
+	}, ${1:time});
 #
 #----------------------------------------------------------------------------------
 #
 #--- _jQuery ----------------------------------------------------------------------
+#
+# ----- css class methods -----
 #
 snippet ac add class method
 	addClass('${1:name}')${2:}
@@ -62,6 +69,13 @@ snippet rc remove class method
 #
 snippet tc toggle class method
 	toggleClass('${1:name}')${2:}
+#
+# ----- events -----
+#
+snippet on on method definition
+	on('${1:name}', function(${2:args}){
+		${3:}
+	});
 #
 #----------------------------------------------------------------------------------
 

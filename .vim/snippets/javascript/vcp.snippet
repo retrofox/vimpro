@@ -3,7 +3,7 @@
  * Module dependencies.
  */
 
-var View = require('view')
+var ${3:View} = require('${4:view}')
 	, inherit = require('inherit');
 
 /**
@@ -19,12 +19,14 @@ module.exports = $1;
 
 function $1(){
 	if (!(this instanceof $1)) return new $1;
-	View.call(this, render('${3:$1 template}'));
-	${4:}
+	$3.call(this, render('${5:$1 template}'));
+	${6:}
+
+	return this;
 }
 
 /**
- * Inherits from 'View.prototype'.
+ * Inherits from '$3.prototype'.
  */
 
-inherit($1, View);
+inherit($1, $3);
