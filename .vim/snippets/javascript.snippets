@@ -1,12 +1,22 @@
 #
 # Summary
 #
-#  
+#  _general
 #   _express
 #   _nodejs
 #   _mongo
 #   _pure_javascript
 #   _jQuery
+#
+#--- _express ---------------------------------------------------------------------
+#
+snippet md Module dependencies
+	/**
+	 * Module dependencies
+	 * */
+
+	var ${0:}
+#----------------------------------------------------------------------------------
 #
 #--- _express ---------------------------------------------------------------------
 #
@@ -79,3 +89,37 @@ snippet on on method definition
 #
 #----------------------------------------------------------------------------------
 
+#--- _Component -------------------------------------------------------------------
+#
+snippet exp module.exports
+	/**
+	 * Expose \`${1:name}\`
+	 */
+	
+	module.exports = $1;
+
+	function $1(){
+		${2:}
+	}
+#
+snippet inh Inherits from
+	/**
+	 * Inherits from \`${1:from}.prototype\`.
+	 */
+	
+	${2:name}.prototype.__proto__ = $1.prototype;
+
+	${3:}
+#
+snippet prt Proto method
+	/**
+	 * ${1:description}
+	 *
+	 * @api ${2:public}
+	 */
+
+	${3:class}.prototype.${4:method} = function(${5:args}){
+		${6:}
+	};
+	
+#----------------------------------------------------------------------------------

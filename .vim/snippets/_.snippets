@@ -22,8 +22,18 @@ snippet', comma endline
 snippet " double ""
 	"${1: }"${2:}
 #
-snippet { double {}
-	{${1: }}
+snippet ( inline double ()
+	(${1: })${2:}
+#
+snippet ) double ()
+	(
+		${1: }
+	)
+#
+snippet {{ object definition { }
+#
+snippet { inline double {}
+	{${1: }}${2:}
 #
 snippet } double {}
 	{
@@ -33,9 +43,9 @@ snippet } double {}
 snippet {{ object definition { }
 	var ${1:name} = {
 		${2:}
-	};
+	}
 #
-snippet [ double  []
+snippet [ inline double []
 	[${1: }]${2:}
 #
 snippet ] double []
@@ -46,11 +56,10 @@ snippet ] double []
 snippet [[ array definition []
 	var ${1:name} = [
 		${2:}
-	];
-#
+	]
 #
 snippet :: definition
-	'${1:name}': '${2:value}'${3:}
+	"${1:name}": "${2:value}"${3:}
 #
 snippet : definition
 	${1:name}: '${2:value}'${3:}

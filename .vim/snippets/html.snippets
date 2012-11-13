@@ -1,0 +1,43 @@
+#
+# Summary
+#
+#  _tags
+#  _attributes
+#
+#--- _tags ------------------------------------------------------------------------
+#
+#
+snippet t inline tag
+	<${1:name}>
+		${2:}
+	</$1>
+#
+snippet tr inline tag
+	<tr>${1:}</tr>${2:}
+#
+snippet it inline tag
+	<${1:name}>${2:}</$1>
+#
+#----------------------------------------------------------------------------------
+#
+#--- _attributes ------------------------------------------------------------------
+#
+snippet cs colspan 
+	colspan="${1:count}"${2:}
+#
+snippet rs rowspan 
+	rowspan="${1:count}"${2:}
+#
+snippet cl class 
+	class="${1:name}"${2:}
+#
+snippet id id 
+	id="${1:id}"${2:}
+#
+snippet hr class 
+	href="${1:/ref}"${2:}
+#
+snippet tl class 
+	title="${1:title}"${2:}
+#
+#----------------------------------------------------------------------------------
