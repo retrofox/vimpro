@@ -4,3 +4,7 @@
 
   * jade
   * stylus
+
+
+  ##
+  type make for installing
