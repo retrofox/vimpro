@@ -10,6 +10,9 @@ current=${PWD}
 sexvim_dir="$current/.vim/"
 sexvim_rc="$current/.vimrc"
 
+mkdir "$vim_dir/undo"
+chmod 777 "$vim_dir/undo"
+
 # vim dir
 if [ -d "$vim_dir" ]; then 
   mv "$vim_dir" "$vim_bck_dir"
