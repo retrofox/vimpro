@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+git submodule init
+git submodule update --recursive
+
 dir=~
 vim_rc="$dir/.vimrc"
 vim_bck_rc="$dir/._vimrc_bck"
@@ -24,4 +27,3 @@ if [ -f "$vim_rc" ]; then
   mv "$vim_rc" "$vim_bck_rc"
 fi
 ln -s $sexvim_rc $vim_rc
-
