@@ -16,3 +16,6 @@
 [submodule ".vim/bundle/vim-vimgutter"]
 	path = .vim/bundle/vim-vimgutter
 	url = git://github.com/airblade/vim-gitgutter.git
+[submodule ".vim/colors/molokai.vim"]
+	path = .vim/colors/molokai.vim
+	url = git://github.com/tomasr/molokai.git
