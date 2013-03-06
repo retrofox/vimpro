@@ -13,3 +13,6 @@
 [submodule ".vim/bundle/vim-poweline"]
 	path = .vim/bundle/vim-poweline
 	url = git://github.com/Lokaltog/vim-powerline.git
+[submodule ".vim/bundle/vim-vimgutter"]
+	path = .vim/bundle/vim-vimgutter
+	url = git://github.com/airblade/vim-gitgutter.git
