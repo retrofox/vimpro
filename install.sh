@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-git submodule init
-git submodule update --recursive
-
 dir=~
 vim_rc="$dir/.vimrc"
 vim_bck_rc="$dir/._vimrc_bck"
