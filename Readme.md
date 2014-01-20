@@ -3,6 +3,8 @@
 
 Pluggins, snippets, tools, ...
 
+![](https://i.cloudup.com/BcvVVUuz7H.png)
+
 ## Syntax support
 
   * javascript
