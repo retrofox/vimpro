@@ -19,3 +19,6 @@
 [submodule ".vim/colors/molokai.vim"]
 	path = .vim/colors/molokai.vim
 	url = git://github.com/tomasr/molokai.git
+[submodule ".vim/bundle/jshint"]
+	path = .vim/bundle/jshint
+	url = git@github.com:wookiehangover/jshint.vim.git

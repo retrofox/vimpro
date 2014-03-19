@@ -1,0 +1,11 @@
+
+{
+  "name": "vimpro",
+  "private": false,
+  "repository": "http://github.com/retrofox/vimpro",
+  "version": "0.0.1",
+  "devDependencies": {
+  },
+  "dependencies": {
+  }
+}
