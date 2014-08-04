@@ -3,6 +3,7 @@
 #
 #  _general
 #  _express
+#  _functions
 #  _nodejs
 #  _mongo
 #  _pure_javascript
@@ -41,11 +42,36 @@ snippet app app routes
 #
 #--- _nodejs ----------------------------------------------------------------------
 #
-snippet addl add listender
-	addListener('${1:event}', function(${2:stream}){
+snippet mdl create a new module template
+	
+	/**
+	 * Export \`$1\` module
+	 */
+
+	module.exports = $1;
+
+	/**
+	 * \`${1:name}\` module
+	 */
+
+	function $1(${2:args}){
 		${3:}
-	});
+	}
 #
+snippet mdep module dependencies
+	/**
+	 * Module dependencies
+	 */
+
+	var ${1:}
+#----------------------------------------------------------------------------------
+#
+#--- _function --------------------------------------------------------------------
+#
+snippet fn function
+	function ${1:name}(${2:args}){
+		${3:}
+	}
 #----------------------------------------------------------------------------------
 #
 #--- _mongo -----------------------------------------------------------------------
